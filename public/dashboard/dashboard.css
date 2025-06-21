@@ -1,0 +1,19 @@
+main > h1
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    color:#dee2e6;
+}
+
+#text
+{
+    outline: none;
+    width: 700px;
+    height: 80px;
+    background-color: #dee2e6;
+    color: #212529;
+    font-size: 2.3em;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+}

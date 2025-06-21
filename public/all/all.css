@@ -1,9 +1,22 @@
 html,body
 {
     margin: 0;
+    display: flex;
+    width: 100%;
 }
 
 a
 {
     text-decoration: none;
+}
+
+
+body > main
+{
+    width: 100%;
+    background-color: #343a40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

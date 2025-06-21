@@ -1,5 +1,6 @@
 const express=require('express');
 const fs=require('fs');
+const { title } = require('process');
 
 const app=express();
 
@@ -14,4 +15,9 @@ app.listen(3000,'0.0.0.0')
 app.get('/',(req,res)=>
 {
     res.render('home',{title:"MNDList"});
+});
+
+app.get('/dashboard',(req,res)=>
+{
+    res.render('dashboard',{title:"Dashboard"});
 });
