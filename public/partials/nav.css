@@ -12,6 +12,7 @@ nav
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .MNDListIcon
@@ -26,4 +27,40 @@ nav
     transform: rotate(270deg);
     color: #dee2e6;
     cursor: pointer;
+}
+
+#links
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+#links > li
+{
+    margin: 0;
+    margin: 12px 0;
+    border: solid 3px #dee2e6;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+#links > li > a
+{
+    font-size: 1.6em;
+    color:#dee2e6;
+    font-weight: 400;
+}
+
+p
+{
+    color:#dee2e6;
+    font-size: 1.2em;
+    text-align: center;
+    position: relative;
+    top:530px;
 }

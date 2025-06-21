@@ -5,9 +5,10 @@ html,body
     width: 100%;
 }
 
-a
+a:link
 {
     text-decoration: none;
+
 }
 
 
@@ -19,4 +20,8 @@ body > main
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+textarea
+{
+    resize: none;
 }

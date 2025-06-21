@@ -8,11 +8,17 @@
     <nav>
         <%- include('partials/nav') %>
     </nav>
-    <main>
+    <main >
         <h1>My Tasks</h1>
-        <textarea id="text"></textarea>
-    </main>
+        <div id="textAndButton">
+            <textarea id="text" placeholder="Type your task here!"></textarea>
+            <button id="addTaskButton" onclick="addTask()">Add Task</button>
+        </div>
+        <div id="main">
 
+        </div>
+        
+    </main>
+    <script src="/dashboard/dashboard.js"></script>
 </body>
-<script src="/home/home.js"></script>
 </html>
