@@ -3,6 +3,18 @@ main > h1
     font-family: 'Courier New', Courier, monospace;
     font-size: 3em;
     color:#dee2e6;
+    text-align: center;
+}
+
+#textAndButton
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    row-gap: 20px;
 }
 
 textarea
@@ -18,14 +30,6 @@ textarea
     border-radius: 10px;
 }
 
-#textAndButton
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 20px;
-    margin-bottom: 100px;
-}
 
 #addTaskButton
 {
@@ -48,5 +52,57 @@ textarea
     justify-content: center;
     flex-direction: column;
     row-gap: 20px;
+    
+}
+
+
+@media screen and (max-width:1120px)
+{
+    textarea
+    {
+        width: 550px;
+    }
+}
+
+@media screen and (max-width:950px)
+{
+    textarea
+    {
+        width: 400px;
+        height: 60px;
+    }
+
+    #addTaskButton
+    {
+        height: 60px;
+        width: 90px;
+    }
+}
+
+@media screen and (max-width:590px)
+{
+    textarea
+    {
+        width: 300px;
+        height: 50px;
+        font-size: 1em;
+    }
+
+    #addTaskButton
+    {
+        height: 50px;
+        width: 70px;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width:470px)
+{
+    textarea
+    {
+        width: 200px;
+        height: 35px;
+        font-size: 1em;
+    }
     
 }

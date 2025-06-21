@@ -5,6 +5,7 @@ nav
     width:300px;
     height: 100vh;
     background-color: #212529;
+    user-select: none;
 }
 
 #icons
@@ -61,6 +62,71 @@ p
     color:#dee2e6;
     font-size: 1.2em;
     text-align: center;
-    position: relative;
-    top:530px;
+    margin-top: 500px;
+}
+
+@media screen and (max-width:1000px)
+{
+    #links > li > a
+    {
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width:360px)
+{
+    #links > li > a
+    {
+        font-size: 0.8em;
+    }
+
+}
+
+@media screen and (max-height:830px)
+{
+    p 
+    {
+        margin-top: 450px;
+    }
+}
+
+@media screen and (max-height:787px)
+{
+    p 
+    {
+        margin-top: 400px;
+    }
+}
+
+@media screen and (max-height:735px)
+{
+    p 
+    {
+        margin-top: 350px;
+    }
+}
+
+@media screen and (max-height:685px)
+{
+    p 
+    {
+        margin-top: 300px;
+    }
+}
+
+@media screen and (max-height:635px)
+{
+    p 
+    {
+        margin-top: 250px;
+    }
+}
+
+@media screen and (max-height:585px)
+{
+    p 
+    {
+        margin-top: 200px;
+    }
 }

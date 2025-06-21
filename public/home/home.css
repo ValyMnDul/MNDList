@@ -14,13 +14,14 @@ main > img
 {
     font-size: 2em;
     color:#dee2e6;
+    text-align: center;
 }
 
 
 #container
 {
     user-select: none;
-    width: 800px;
+    width: 60%;
     height: 150px;
     display: flex;
     justify-content: space-evenly;
@@ -47,4 +48,55 @@ main > img
     cursor: pointer;
     font-weight: 600;
     color:#dee2e6;
+    text-align: center;
+}
+
+@media screen and (max-width:1000px)
+{
+    main > img 
+    {
+        width: 300px;
+        height: 120px;
+    }
+
+    #moto
+    {
+        font-size: 1.3em;
+    }
+
+    .card
+    {
+        width: 180px;
+        height:40px;
+    }
+}
+
+@media screen and (max-width:600px)
+{
+    main > img 
+    {
+        width: 200px;
+        height: 80px;
+    }
+
+    #moto
+    {
+        font-size: 1em;
+    }
+    
+    .card
+    {
+        width: 140px;
+        height:25px;
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width:360px)
+{
+    main > img 
+    {
+        width: 160px;
+        height: 60px;
+    }
 }

@@ -1,6 +1,4 @@
 const express=require('express');
-const fs=require('fs');
-const { title } = require('process');
 
 const app=express();
 

@@ -10,6 +10,9 @@ function addTask()
 
         div.style.display="flex";
         div.style.columnGap="20px";
+        div.style.flexWrap="wrap";
+        div.style.rowGap="20px";
+        div.style.justifyContent="center";
 
         const textarea=document.createElement("textarea");
         const deleteBtn=document.createElement("button");
