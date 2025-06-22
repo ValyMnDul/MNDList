@@ -1,0 +1,121 @@
+
+h1
+{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin:30px;
+    color: #dee2e6;
+    font-size: 3em;
+}
+
+#container
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    padding: 40px 5px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.card
+{
+    margin:0 20px;
+    width: 360px;
+    height: 160px;
+    background-color: transparent;
+    border: 3px solid #dee2e6;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover
+{
+    transform: translateY(-5px);
+}
+
+.card > i
+{
+    font-size: 4.5em;
+    color:#dee2e6;
+}
+
+.card > div > h2
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+}
+
+.card > div > p
+{
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media screen and (max-width:1000px)
+{
+    .card
+    {
+        width: 100px;
+        height: 40px;
+    }
+} 
+
+@media screen and (max-width:500px) 
+{
+    main
+    {
+        margin:5px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:370px) 
+{
+    main
+    {
+        margin:5px;
+        margin-bottom: 30px;
+    }
+
+    .card > div > h2
+    {
+        font-size: 1.2em;
+    }
+
+    .card > div > p
+    {
+        font-size: 0.9em;
+    }
+
+    .card > i
+    {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:290px) 
+{
+    .card > div > h2
+    {
+        font-size: 1em;
+    }
+
+    .card > div > p
+    {
+        font-size: 0.8em;
+    }
+
+    .card > i
+    {
+        font-size: 3em;
+    }
+}

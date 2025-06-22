@@ -6,7 +6,7 @@ const app=express();
 app.set('view engine','ejs');
 app.use(express.static('public'));
 app.use(express.json());
-app.listen(3000,'0.0.0.0')
+app.listen(2100,'0.0.0.0')
 
 ///////ROUTES
 
@@ -28,6 +28,11 @@ app.get('/settings',(req,res)=>
 app.get('/learn_more',(req,res)=>
 {
     res.render('learnMore',{title:"Learn More"});
+});
+
+app.get('/contact',(req,res)=>
+{
+    res.render('contact',{title:"Contact"});
 });
 
 app.use((req,res)=>
