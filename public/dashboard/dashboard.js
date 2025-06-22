@@ -1,6 +1,8 @@
 const main=document.getElementById("main");
 const text=document.getElementById("text");
-function addTask()
+
+let count=1;
+async function addTask()
 {
 
     if(text.value!=="")
@@ -39,7 +41,34 @@ function addTask()
         div.appendChild(textarea);
         div.appendChild(deleteBtn);
         main.appendChild(div);
+
+
+
+        const response = await fetch('/api/notes', 
+        {
+            method: 'POST',
+            headers: 
+            {
+                'Content-Type': 'application/json'
+            },
+
+            body: JSON.stringify
+            (
+                {
+                    id:`note_${count}`,
+                    note:text.value
+                }
+            )
+        });
+
+        const responseJSON=await response.json();
+
+        console.log(responseJSON);
+
         text.value="";
+        count++;
+        
     }
 }
+
   

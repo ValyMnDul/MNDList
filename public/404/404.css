@@ -4,3 +4,14 @@ h1
     font-size: 3em;
     color: #dee2e6;
 }
+
+button
+{
+    width: 150px;
+    height: 40px;
+    font-size: 1.4em;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+}
