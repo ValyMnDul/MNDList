@@ -1,3 +1,5 @@
+
+
 const rateText=document.getElementById("rateText");
 
 const star1=document.getElementById("star1");
