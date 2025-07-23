@@ -3,6 +3,8 @@
 
 **MNDList** is a simple ToDo List web app built with **Node.js** and **Express**. It allows users to add and delete notes, which are stored directly in browser cookies — no database required.
 
+![main](/MD_Assets/main.png)
+
 ## 🔧 Features
 
 - ✅ Add notes
