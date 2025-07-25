@@ -54,3 +54,9 @@ http://localhost:2100
 - Notes are saved only in the browser (no sync across devices).
 - Clearing cookies will delete all saved notes.
 - No login or user authentication.
+
+## 📤 Contributing
+
+Pull requests are welcome! If you'd like to contribute or suggest features, feel free to open an issue or fork the repo.
+
+---
