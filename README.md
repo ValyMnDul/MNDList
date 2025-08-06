@@ -1,5 +1,4 @@
 # MNDList 
-**🔗 Live Site:** [MNDList](https://mndlist.valymnd.hackclub.app)
 
 **MNDList** is a simple ToDo List web app built with **Node.js** and **Express**. It allows users to add and delete notes, which are stored directly in browser cookies — no database required.
 
