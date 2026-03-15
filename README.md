@@ -4,21 +4,21 @@
 
 ![main](/MD_Assets/main.png)
 
-## 🔧 Features
+## Features
 
-- ✅ Add notes
-- 🗑️ Delete notes
-- 🍪 Notes are saved using cookies (per browser)
-- 🖥️ Simple and clean user interface
+- Add notes
+- Delete notes
+- Notes are saved using cookies (per browser)
+- Simple and clean user interface
 
-## 📦 Technologies Used
+## Technologies Used
 
 - [Node.js](https://nodejs.org/)
 - [Express.js](https://expressjs.com/)
 - [cookie-parser](https://www.npmjs.com/package/cookie-parser)
 - HTML & CSS (for frontend)
 
-## 🚀 Installation
+## Installation
 
 1. Clone this repository:
 
@@ -42,19 +42,19 @@ node app.js
 http://localhost:2100
 ```
 
-## ⚙️ How It Works
+## How It Works
 
 - Notes are stored locally in the user's browser using cookies.
 - When a note is added or deleted, the cookie is updated.
 - Since no database is used, the notes are only available in that browser session.
 
-## ⚠️ Limitations
+## Limitations
 
 - Notes are saved only in the browser (no sync across devices).
 - Clearing cookies will delete all saved notes.
 - No login or user authentication.
 
-## 📤 Contributing
+## Contributing
 
 Pull requests are welcome! If you'd like to contribute or suggest features, feel free to open an issue or fork the repo.
 
