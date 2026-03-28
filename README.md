@@ -1,6 +1,6 @@
 # MNDList 
 
-**MNDList** is a simple ToDo List web app built with **Node.js** and **Express**. It allows users to add and delete notes, which are stored directly in browser cookies — no database required.
+**MNDList** is a simple ToDo List web app built with **Node.js** and **Express**. It allows users to add and delete notes, which are stored directly in browser cookies.
 
 ![main](/MD_Assets/main.png)
 
@@ -18,30 +18,6 @@
 - [cookie-parser](https://www.npmjs.com/package/cookie-parser)
 - HTML & CSS (for frontend)
 
-## Installation
-
-1. Clone this repository:
-
-```bash
-git clone https://github.com/your-username/MNDList.git
-cd MNDList
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the server:
-```bash
-node app.js
-```
-
-4. Open your browser and go to:
-```
-http://localhost:2100
-```
-
 ## How It Works
 
 - Notes are stored locally in the user's browser using cookies.
@@ -58,4 +34,6 @@ http://localhost:2100
 
 Pull requests are welcome! If you'd like to contribute or suggest features, feel free to open an issue or fork the repo.
 
----
+## Licence
+
+MNDList is under [MIT Licence](https://github.com/ValyMnDul/MNDList/blob/main/LICENSE.md)
