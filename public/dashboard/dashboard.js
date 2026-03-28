@@ -2,18 +2,13 @@ const main = document.getElementById("main");
 const text = document.getElementById("text");
 
 let count = 0;
-
-// Verifică dacă este primul load (nu refresh)
 if (!sessionStorage.getItem('hasRefreshed')) {
-    // Marchează că s-a făcut refresh-ul
     sessionStorage.setItem('hasRefreshed', 'true');
     
-    // Așteaptă o secundă și apoi refresh
     setTimeout(() => {
         location.reload();
     }, 1000);
 } else {
-    // Este al doilea load, rulează aplicația normal
     getNotes();
 }
 
@@ -26,12 +21,10 @@ async function getNotes() {
             }
         });
         
-        // Verifică dacă răspunsul este OK
         if (!notes.ok) {
             throw new Error(`HTTP error! status: ${notes.status}`);
         }
         
-        // Verifică dacă răspunsul este JSON
         const contentType = notes.headers.get('content-type');
         if (!contentType || !contentType.includes('application/json')) {
             throw new Error('Răspunsul nu este JSON valid');
@@ -39,7 +32,6 @@ async function getNotes() {
         
         const notesJSON = await notes.json();
         
-        // Verifică dacă notesJSON are structura corectă
         if (!notesJSON || !notesJSON.notes) {
             console.error('Structura JSON invalidă:', notesJSON);
             return;
